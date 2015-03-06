@@ -1,7 +1,7 @@
 #pragma once
 #include <list>
 #include <boost/thread.hpp>
-
+/*外面只有一份静态实例，但是会用许多Get()方法，所以将Get()里面设置为线程安全的*/
 class MysqlConnector;
 class SQLConnectorPool
 {
