@@ -17,4 +17,4 @@ private:
 	const int _max;			// 连接池上限
 	volatile int _count;    // 已经生成的connector
 	enum { MAX_CONNECTOR = 256, };
-}
+};
